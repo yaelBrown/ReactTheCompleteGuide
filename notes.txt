@@ -1,0 +1,139 @@
+notes.txt
+
+Demo react app
+
+- https://codepen.io/anon/pen/MELQaQ
+
+New ES6 syntax (es6/babel)
+
+- let - use let when you want to create a variable thats a variable
+- const - use const (and in all caps) when you want to create a constant variable that does not change. 
+
+- arrow funtsion - Another way of creating a javascript function
+
+const myFunc = (args) => {
+  return args;
+};
+
+const myFunc = args => args;
+
+-- no more issues with the this keyword
+
+- Classes - are blueprint for objects, have properties and methods
+
+class Person {
+  name ='Max',
+
+  // Arrow function
+  call = () => {};
+};
+
+-- Useage 
+
+const myPerson  = new Person();
+myPerson.call();
+console.log(myPerson.name);
+
+-- Inheritance
+
+class Person extends Master {
+  constructor() {
+    // Must call super class to inherit from master
+    super();
+    this.name = 'Max';
+    this.gender = 'female';
+  }
+
+  printMyName() {
+    console.log(this.name);
+  }
+}
+
+- ... - Spread operator - Used to split up array elements OR object properties
+
+const person = {
+  name: 'Max'
+};
+
+const newPerson = {
+  ...person, // inherits everything from person
+  age: 28 // contains everything from person and appends age. 
+}
+
+console.log(newPerson);
+// "name: 'Max'"
+// "age: 28"
+
+- Destructuring - Easily extract array elements or object properties and store them in variables. 
+
+const numbers = [1, 2, 3];
+[num1, num3] = numbers;
+console.log(num1, num3);
+
+- Object Destructuring - ...except with a object
+
+{name} = {name: 'Max', age: 28}
+console.log(name) // Max
+console.log(age) // undefined
+
+- References and Primitive types - Objects and arrays are reference types.
+
+const number = 1;       // primative
+const num2 = number;    // referenced (referenced a primitive to create a primative)
+
+console.log(num2); 
+// 1
+
+- Array functions - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+
+arr.map();
+arr.find();
+arr.findIndex();
+arr.filter();
+arr.reduce();
+arr.concat();
+arr.slice();
+arr.splice();
+
+
+
+- Install a build workflow
+
+--- Webpack is a bundler
+
+--- Babel is a next-gen javascript compiler. 
+
+-- Goto nodejs.org and install latest version
+
+-- type in terminal: "npm install -g create-react-app" (That install react app creator onto your system)
+
+-- type in terminal: "create-react-app [app name in all lowercase]" (Creates app in current directory)
+
+-- type in terminal: "npm start" (Starts react app in local development environment)
+
+- Alternate to JSX
+
+return React.createElement('div', null, 'h1', 'this is h1 text');
+
+-- cannot use class to definte jsx class. Have to use className because class is a reserved keyword. Gets translated when it is rendered.
+
+-- function names are all lowercase and same name as the file.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
