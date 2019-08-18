@@ -11,7 +11,7 @@ Demo react app
 New ES6 syntax (es6/babel)
 
   - let - use let when you want to create a variable thats a variable
-  - const - use const (and in all caps) when you want to create a constant variable that does not change. 
+  - const - use const (and in all caps) when you want to create a constant variable that does not change.
 
   - arrow funtsion - Another way of creating a javascript function
 
@@ -32,7 +32,7 @@ New ES6 syntax (es6/babel)
     call = () => {};
   };
 
-  -- Useage 
+  -- Useage
 
   const myPerson  = new Person();
   myPerson.call();
@@ -61,14 +61,14 @@ New ES6 syntax (es6/babel)
 
   const newPerson = {
     ...person, // inherits everything from person
-    age: 28 // contains everything from person and appends age. 
+    age: 28 // contains everything from person and appends age.
   }
 
   console.log(newPerson);
   // "name: 'Max'"
   // "age: 28"
 
-  - Destructuring - Easily extract array elements or object properties and store them in variables. 
+  - Destructuring - Easily extract array elements or object properties and store them in variables.
 
   const numbers = [1, 2, 3];
   [num1, num3] = numbers;
@@ -85,7 +85,7 @@ New ES6 syntax (es6/babel)
   const number = 1;       // primative
   const num2 = number;    // referenced (referenced a primitive to create a primative)
 
-  console.log(num2); 
+  console.log(num2);
   // 1
 
   - Array functions - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
@@ -105,13 +105,13 @@ New ES6 syntax (es6/babel)
 
   Install a build workflow
     Webpack is a bundler
-    Babel is a next-gen javascript compiler. 
+    Babel is a next-gen javascript compiler.
     React uses JSX
     Two different types of apps: State vs. stateless
     Webpack allows you to import css into the javascript
 
     Install Nodejs
-    
+
     Use node to setup react application
       "npm install -g create-react-app" (That install react app creator onto your system)
       type in terminal: "create-react-app [app name in all lowercase]" (Creates app in current directory)
@@ -119,27 +119,25 @@ New ES6 syntax (es6/babel)
     Run development environment
       type in terminal: "npm start" (Starts react app in local development environment)
 
-    Return statements in JS push HTML to webpage. 
+    Return statements in JS push HTML to webpage.
       return React.createElement('div', null, 'h1', 'this is h1 text');
       cannot use class to definte jsx class. Have to use className because class is a reserved keyword. Gets translated when it is rendered.
       function names are all lowercase and same name as the file.
 
     Manually set state for applications without state control like Redux.
       this.state.persons[0].setState() => { name: altName, age: altAge };
-
       application state should only be changed in containers.
-
       You want to use as many stateless components as possible makes the program more manageable and perform better
-
       changing states in all kinds of components makes your app unpredictable
 
-    Add styling 
-
+    Add styling
       "import './css/style.css'; " at the top of app.js
-
       You could create a style object and in the inline-'html' you can refer to the reference in curly brackets. [not recommended]
 
-
+    State vs stateless
+      state apps - are built with a class
+      stateless apps - are built with a function
+      Both apps - run the same
 
 
 
