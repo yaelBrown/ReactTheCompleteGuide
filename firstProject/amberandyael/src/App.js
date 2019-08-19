@@ -12,6 +12,8 @@ export default class App extends Component {
     // number: 0,
     // myQuote: ''
   }
+
+
   //BEFORE THE  PAGE LOADS
   componentDidMount = () => {
     console.log(`yael`)
@@ -21,9 +23,11 @@ export default class App extends Component {
           //ss
           this.setState({api: [...data]})
           this.setState({loading: false})
-          
+
         })
   }
+
+
   render() {
     console.log(`data:`, this.state.api)
     return (
@@ -39,7 +43,7 @@ export default class App extends Component {
         {this.state.api.map(c => {
           console.log(c);
           return (
-            <div key="theImage">  
+            <div key="theImage">
               <h1>This is my id: {c.id}</h1>
               <img src={c.url} alt="img" />
             </div>
@@ -50,7 +54,7 @@ export default class App extends Component {
         <CatTwo/>
         <ShowingStyle/>
       </div>
-      
+
     )
   }
 }
@@ -60,7 +64,7 @@ const navStyle = {
   height: '10%',
   background: 'red',
   color: 'white'
-  // backgroundImage: 
+  // backgroundImage:
 }
 
 
