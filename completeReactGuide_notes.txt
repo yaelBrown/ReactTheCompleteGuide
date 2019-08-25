@@ -5,6 +5,21 @@ Demo react app
 - https://codepen.io/anon/pen/MELQaQ
 
 
+Axios -  Promise based http request library which allows us to interface with rest api's.
+  easy to use api
+
+  install
+    npm instal axios
+
+  import
+    import axios from 'axios';
+
+  use
+    axios.get('url').then(res => {
+      console.log(res); // verify content
+      this.setState({
+        persons: res.data.map(person => <li>{person.name}</li>)
+      });
 
 
 
